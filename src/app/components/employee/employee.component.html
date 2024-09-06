@@ -1,0 +1,40 @@
+<div class="col-6">
+    <form (ngSubmit)="onSubmit()" #employeeForm="ngForm">
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" [(ngModel)]="employee.name" required>
+        </div>
+      
+        <div>
+          <label for="position">Position:</label>
+          <input type="text" id="position" name="position" [(ngModel)]="employee.position" required>
+        </div>
+      
+        <div>
+          <label for="department">Department:</label>
+          <input type="text" id="department" name="department" [(ngModel)]="employee.department" required>
+        </div>
+      
+        <button class="btn btn-primary" type="submit">Add Employee</button>
+      </form>
+</div>
+<div class="col-6">
+ <table>
+    <thead>
+        <tr>
+          <th>Name</th>
+          <th>Position</th>
+          <th>Department</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for(employee of employees;track employee.name){
+        <tr>
+            <td>{{ employee.name }}</td>
+            <td>{{ employee.position }}</td>
+            <td>{{ employee.department }}</td>
+          </tr>
+        }
+      </tbody>
+ </table>
+</div>
