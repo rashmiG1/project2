@@ -1,0 +1,1 @@
+import{Ta as o,Ua as a,Z as n,cb as r,gb as i}from"./chunk-IJT4EW5H.js";var c=(()=>{class e{static \u0275fac=function(t){return new(t||e)};static \u0275cmp=n({type:e,selectors:[["large-component"]],standalone:!0,features:[i],decls:2,vars:0,template:function(t,p){t&1&&(o(0,"h1"),r(1,"This is large /Heavy Component"),a())}})}return e})();export{c as LargeComponent};
